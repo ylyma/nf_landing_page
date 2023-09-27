@@ -1,0 +1,147 @@
+.card {
+  border-radius: 10px;
+  padding: 7px;
+  border: 2px solid transparent;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 350px;
+  height: fit-content;
+  height: auto;
+  margin: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 3px 3px 15px 2px #ebeae8;
+  transform: translate(0, -2%);
+}
+.card:focus {
+  border: 2px solid var(--primary);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* background-color: aqua; */
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  width: 100%;
+  /* background-color: blueviolet; */
+  height: fit-content;
+}
+.top-left-wrapper {
+  display: flex;
+  float: left;
+  width: auto;
+  align-items: flex-start;
+  justify-content: center;
+  /* background-color: bisque; */
+  padding: 10px 5px;
+  margin-left: 5px;
+}
+.top-middle-wrapper {
+  /* background-color: aqua; */
+  height: fit-content;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px 0px;
+  height: fit-content;
+}
+.top-right-wrapper {
+  float: right;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-right: 0px;
+  padding: 5px;
+  height: fit-content;
+  white-space: nowrap;
+  /* background-color: crimson; */
+}
+.logo-img {
+  max-width: 40px;
+  max-height: 40px;
+  margin: 0px;
+}
+.company-rating-wrapper {
+  /* background-color: chocolate; */
+  height: fit-content;
+  flex-grow: 1;
+  padding: 5px 0px;
+}
+.company {
+  margin: 2px 6px 0px;
+}
+.rating {
+  margin: 2px 0px 0px;
+}
+.star-icon {
+  width: 10px;
+  height: 10px;
+  margin: 3px 0px 0px;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: medium;
+  text-align: start;
+  /* background-color: antiquewhite; */
+  padding: 0px 6px;
+  margin: 0px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  max-height: 40px;
+}
+.date-location-wrapper {
+  margin: 3px 0px 0px;
+  /* background-color: cornflowerblue; */
+  margin-bottom: -20px;
+  padding-left: 7px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.date {
+  color: var(--primary);
+  font-weight: bold;
+  padding: 0px 5px 0px 0px;
+  margin: 0px;
+  font-size: 12px;
+}
+.location-icon {
+  margin: -4px 5px;
+  height: 20px;
+  width: 10px;
+  color: grey;
+}
+.location {
+  color: grey;
+  margin: 0px;
+  font-size: 12px;
+}
+.divider {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;
+  background-color: var(--gray-light);
+  height: 1px;
+}
+.tags {
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;
+  min-height: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
