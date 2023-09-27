@@ -23,6 +23,7 @@ const Home = () => {
         datePosted={"about 2 hours ago"}
         rating={3.6}
         type={"Data Sci"}
+        salary="S$7,450 - S$11,767"
       ></JobCard>
     </div>
   );

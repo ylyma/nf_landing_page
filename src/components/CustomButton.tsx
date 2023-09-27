@@ -25,7 +25,7 @@ const CustomButton: React.FC<Props> = ({ title, icon, fill }: Props) => {
 
   return (
     <button
-      className="button body"
+      className="button"
       style={{ backgroundColor: getFill(), color: getContentColor() }}
     >
       {title}

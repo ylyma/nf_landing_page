@@ -33,53 +33,23 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+@font-face {
+  font-family: open-sans;
+  src: url("./fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: roboto-mono;
+  src: url("./fonts/RobotoMono-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: consolas;
+  src: url("./fonts/Consolas.ttf");
+}
 element.style {
   width: 100%;
   min-height: 950px;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  vertical-align: top;
-  background-repeat: no-repeat;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-user agent stylesheet div {
-  display: block;
-}
-body {
-  font-family: open sans, helvetica, arial, sans-serif;
-}
-body {
-  background: #f3f2ef;
-  font-family: open sans, helvetica, arial, sans-serif;
-  color: #3a3a3a;
-  overflow-y: scroll;
-}
-body {
-  position: relative;
-  min-height: 100%;
-  width: 100%;
-  background-color: #f2f2f2;
-  font-size: 0.85rem;
-}
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
-    helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
-    segoe ui emoji, segoe ui symbol, noto color emoji;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-}
+
 :root,
 :host {
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";

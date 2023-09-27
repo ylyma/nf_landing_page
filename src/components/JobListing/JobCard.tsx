@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React from "react";
 import "./JobCard.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { GrStar } from "react-icons/gr";
@@ -28,41 +28,60 @@ const JobCard: React.FC<Props> = ({
   rating,
 }: Props) => {
   return (
-    <button className="card">
+    <button className="job-listing__card">
       <div className="row">
-        <div className="top-left-wrapper">
+        <div className="job-listing__logo-wrapper">
           <img
-            className="logo-img"
+            className="job-listing__logo-img"
             src={require("../../assets/square-solid.png")}
             alt="company logo"
           ></img>
         </div>
-        <div className="top-middle-wrapper column">
-          <div className="company-rating-wrapper row">
-            <p className="company">{companyName}</p>
-            <p className="rating">{rating}</p>
-            <GrStar className="star-icon" />
+        <div className="job-listing__description-wrapper column">
+          <div className="job-listing__company-rating-wrapper row">
+            <p className="job-listing__company">{companyName}</p>
+            <p className="job-listing__rating">{rating}</p>
+            <GrStar className="job-listing__star-icon" />
           </div>
-          <p className="title">{title}</p>
-          <div className="date-location-wrapper row">
-            <p className="date">{datePosted}</p>
-            <FaLocationDot className="location-icon" />
-            <p className="location">{location}</p>
+          <p className="job-listing__title">{title}</p>
+          <div className="job-listing__date-location-wrapper row">
+            <p className="job-listing__date">{datePosted}</p>
+            <FaLocationDot className="job-listing__location-icon" />
+            <p className="job-listing__location">{location}</p>
           </div>
-          <p>{salary}</p>
+          {salary === undefined ? (
+            <div />
+          ) : (
+            <div className="job-listing__salary-wrapper row">
+              <p>{salary} / mth</p>
+              <Tag
+                className="job-listing__salary-estimate"
+                colored={false}
+                title="EST"
+              ></Tag>
+            </div>
+          )}
         </div>
-        <div className="top-right-wrapper">
-          <Tag colored={true} title={type}></Tag>
+        <div className="job-listing__type-wrapper">
+          <Tag
+            className="job-listing__type--font"
+            colored={true}
+            title={type}
+          ></Tag>
         </div>
       </div>
-      <hr className="divider" />
-      <div className="tags row">
+      <hr className="job-listing__divider" />
+      <div className="job-listing__tags">
         {tags === undefined ? (
           <div />
         ) : (
           tags.map((tag) => (
-            <span>
-              <Tag colored={false} title={tag}></Tag>
+            <span className="job-listing__tag">
+              <Tag
+                className="job-listing__tag--font"
+                colored={false}
+                title={tag}
+              ></Tag>
             </span>
           ))
         )}

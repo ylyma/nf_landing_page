@@ -5,9 +5,10 @@ import { PRIMARY, SECONDARY, GREY, DARKGREY } from "../constants/colors";
 type Props = {
   colored: boolean;
   title: string;
+  className?: string;
 };
 
-const Tag: React.FC<Props> = ({ colored, title }: Props) => {
+const Tag: React.FC<Props> = ({ colored, title, className }: Props) => {
   const getBgColor = () => {
     if (colored) {
       return SECONDARY;
@@ -23,8 +24,11 @@ const Tag: React.FC<Props> = ({ colored, title }: Props) => {
   };
   return (
     <div
-      className="tag"
-      style={{ backgroundColor: getBgColor(), color: getTextColor() }}
+      className={`tag ${className}`}
+      style={{
+        backgroundColor: getBgColor(),
+        color: getTextColor(),
+      }}
     >
       {title}
     </div>

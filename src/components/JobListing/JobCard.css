@@ -1,9 +1,9 @@
-.card {
+.job-listing__card {
   border-radius: 10px;
   padding: 7px;
   border: 2px solid transparent;
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 350px;
+  width: 417px;
   height: fit-content;
   height: auto;
   margin: 5px 5px;
@@ -12,11 +12,11 @@
   background-color: white;
   cursor: pointer;
 }
-.card:hover {
+.job-listing__card:hover {
   box-shadow: 3px 3px 15px 2px #ebeae8;
   transform: translate(0, -2%);
 }
-.card:focus {
+.job-listing__card:focus {
   border: 2px solid var(--primary);
 }
 .row {
@@ -29,12 +29,7 @@
   display: flex;
   flex-direction: column;
 }
-.top {
-  width: 100%;
-  /* background-color: blueviolet; */
-  height: fit-content;
-}
-.top-left-wrapper {
+.job-listing__logo-wrapper {
   display: flex;
   float: left;
   width: auto;
@@ -44,7 +39,7 @@
   padding: 10px 5px;
   margin-left: 5px;
 }
-.top-middle-wrapper {
+.job-listing__description-wrapper {
   /* background-color: aqua; */
   height: fit-content;
   flex-grow: 1;
@@ -52,7 +47,7 @@
   padding: 5px 0px;
   height: fit-content;
 }
-.top-right-wrapper {
+.job-listing__type-wrapper {
   float: right;
   display: flex;
   align-items: flex-start;
@@ -63,32 +58,41 @@
   white-space: nowrap;
   /* background-color: crimson; */
 }
-.logo-img {
-  max-width: 40px;
-  max-height: 40px;
-  margin: 0px;
+.job-listing__type--font {
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
-.company-rating-wrapper {
+.job-listing__logo-img {
+  max-width: 45px;
+  max-height: 45px;
+  margin: 0px;
+  border-radius: 5px;
+}
+.job-listing__company-rating-wrapper {
   /* background-color: chocolate; */
   height: fit-content;
   flex-grow: 1;
   padding: 5px 0px;
 }
-.company {
+.job-listing__company {
   margin: 2px 6px 0px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 350;
 }
-.rating {
+.job-listing__rating {
   margin: 2px 0px 0px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 350;
 }
-.star-icon {
+.job-listing__star-icon {
   width: 10px;
   height: 10px;
-  margin: 3px 0px 0px;
+  margin: 6px 3px 0px;
 }
 
-.title {
+.job-listing__title {
   font-weight: bolder;
-  font-size: medium;
+  font-size: 16px;
   text-align: start;
   /* background-color: antiquewhite; */
   padding: 0px 6px;
@@ -96,40 +100,42 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  font-size: 13px;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 20px;
   max-height: 40px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
 }
-.date-location-wrapper {
+.job-listing__date-location-wrapper {
   margin: 3px 0px 0px;
   /* background-color: cornflowerblue; */
-  margin-bottom: -20px;
+  /* margin-bottom: -20px; */
   padding-left: 7px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.date {
+.job-listing__date {
   color: var(--primary);
   font-weight: bold;
   padding: 0px 5px 0px 0px;
   margin: 0px;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
 }
-.location-icon {
-  margin: -4px 5px;
+.job-listing__location-icon {
+  margin: 0px 5px;
   height: 20px;
   width: 10px;
   color: grey;
 }
-.location {
+.job-listing__location {
   color: grey;
   margin: 0px;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
 }
-.divider {
+.job-listing__divider {
   border: 0;
   clear: both;
   display: block;
@@ -137,11 +143,38 @@
   background-color: var(--gray-light);
   height: 1px;
 }
-.tags {
+.job-listing__tags {
   width: 100%;
   bottom: 0;
+  padding: 0px;
   overflow: hidden;
-  min-height: 20px;
+  min-height: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.job-listing__tag {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 90%;
+  margin: 0px 3px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+.job-listing__tag--font {
+  font-family: "roboto-mono", "consolas", monospace;
+  font-size: 14px;
+}
+.job-listing__salary-estimate {
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0px 10px;
+  padding: 2px 8px;
+}
+.job-listing__salary-wrapper {
+  padding: 0px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0px 7px;
 }
