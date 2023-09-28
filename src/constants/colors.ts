@@ -1,5 +1,16 @@
-export const PRIMARY = "#1fc76a";
-export const SECONDARY = "#ddf7e9";
-export const ACCENT = "#f1f1f1";
-export const GREY = "#f1f1f1";
-export const DARKGREY = "#7d817c";
+const root = document.querySelector(":root");
+
+export const PRIMARY =
+  root === null
+    ? ""
+    : getComputedStyle(root).getPropertyValue("--primary").toString();
+
+export const LIGHTPRIMARY =
+  root === null
+    ? ""
+    : getComputedStyle(root).getPropertyValue("--primary-light").toString();
+
+export const LIGHTGRAY =
+  root === null
+    ? ""
+    : getComputedStyle(root).getPropertyValue("--gray-light").toString();

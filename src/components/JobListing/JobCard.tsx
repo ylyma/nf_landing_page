@@ -6,7 +6,7 @@ import Tag from "../Tag";
 
 type Props = {
   title: string;
-  logoUrl?: string;
+  logo: any;
   companyName: string;
   location: string;
   salary?: string;
@@ -16,9 +16,9 @@ type Props = {
   rating?: number;
 };
 
-const JobCard: React.FC<Props> = ({
+const JobCard = ({
   title,
-  logoUrl,
+  logo,
   companyName,
   location,
   salary,
@@ -33,16 +33,16 @@ const JobCard: React.FC<Props> = ({
         <div className="job-listing__logo-wrapper">
           <img
             className="job-listing__logo-img"
-            src={require("../../assets/square-solid.png")}
+            src={logo}
             alt="company logo"
           ></img>
         </div>
         <div className="job-listing__description-wrapper column">
-          <div className="job-listing__company-rating-wrapper row">
-            <p className="job-listing__company">{companyName}</p>
-            <p className="job-listing__rating">{rating}</p>
+          <p className="job-listing__company-rating-wrapper row">
+            <span className="job-listing__company">{companyName}</span>
+            <span className="job-listing__rating">{rating}</span>
             <GrStar className="job-listing__star-icon" />
-          </div>
+          </p>
           <p className="job-listing__title">{title}</p>
           <div className="job-listing__date-location-wrapper row">
             <p className="job-listing__date">{datePosted}</p>
@@ -50,7 +50,7 @@ const JobCard: React.FC<Props> = ({
             <p className="job-listing__location">{location}</p>
           </div>
           {salary === undefined ? (
-            <div />
+            <br />
           ) : (
             <div className="job-listing__salary-wrapper row">
               <p>{salary} / mth</p>

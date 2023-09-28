@@ -1,0 +1,7 @@
+.jobs-screen__main {
+  background-color: #f3f2ef;
+}
+.jobs-screen__jobs-list {
+  width: 300px;
+  display: block;
+}

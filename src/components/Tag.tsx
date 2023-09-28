@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from "react";
 import "./Tag.css";
-import { PRIMARY, SECONDARY, GREY, DARKGREY } from "../constants/colors";
+import { LIGHTGRAY, LIGHTPRIMARY, PRIMARY } from "../constants/colors";
 
 type Props = {
   colored: boolean;
@@ -11,9 +11,9 @@ type Props = {
 const Tag: React.FC<Props> = ({ colored, title, className }: Props) => {
   const getBgColor = () => {
     if (colored) {
-      return SECONDARY;
+      return LIGHTPRIMARY;
     }
-    return GREY;
+    return LIGHTGRAY;
   };
 
   const getTextColor = () => {

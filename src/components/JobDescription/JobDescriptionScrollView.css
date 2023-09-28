@@ -1,0 +1,14 @@
+/* .job-description__card {
+  top: 106px;
+  display: none;
+  padding: 10px 5px;
+  position: sticky;
+  flex-grow: 1;
+  min-width: 0;
+}
+.job-description__scrollable {
+  padding: 0 5px 50px 0;
+  max-height: calc(100vh - 106px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+} */
