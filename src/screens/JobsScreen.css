@@ -1,7 +1,5 @@
 .jobs-screen__main {
-  background-color: #f3f2ef;
-}
-.jobs-screen__jobs-list {
-  width: 300px;
-  display: block;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
 }

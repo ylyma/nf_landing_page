@@ -5,8 +5,10 @@ import JobsScreen from "./screens/JobsScreen";
 
 function App() {
   return (
-    <div>
-      <JobsScreen />
+    <div className="main__screen">
+      <div className="main__container">
+        <JobsScreen />
+      </div>
     </div>
   );
 }

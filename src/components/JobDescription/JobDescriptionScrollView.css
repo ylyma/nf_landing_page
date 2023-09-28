@@ -1,6 +1,5 @@
-/* .job-description__card {
+.job-description__container {
   top: 106px;
-  display: none;
   padding: 10px 5px;
   position: sticky;
   flex-grow: 1;
@@ -11,4 +10,18 @@
   max-height: calc(100vh - 106px);
   overflow-x: hidden;
   overflow-y: scroll;
-} */
+}
+@media screen and (min-width: 1010px) {
+  .job-description__card {
+    display: block;
+  }
+}
+.job-description__card {
+  margin: 10px 0 0 0;
+  padding: 29px 20px;
+  font-size: 14px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  overflow-wrap: break-word;
+  background-color: #ffffff;
+}
