@@ -11,8 +11,17 @@
   overflow-x: hidden;
   overflow-y: scroll;
 }
+.job-description__scrollable::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+.job-description__scrollable::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 8px;
+}
 @media screen and (min-width: 1010px) {
-  .job-description__card {
+  .job-description__container {
     display: block;
   }
 }

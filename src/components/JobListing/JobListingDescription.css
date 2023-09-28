@@ -1,0 +1,93 @@
+@import "../../assets/themes.css";
+.job-listing__description-wrapper--web {
+  /* background-color: aqua; */
+  height: fit-content;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px 0px;
+  height: fit-content;
+}
+.job-listing__company-rating-wrapper--web {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 6px;
+  margin-inline-end: 0px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 350;
+  text-align: start;
+  margin: 5px 6px;
+  font-size: 14px;
+}
+.job-listing__company--web {
+  margin: 2px 10px 0px 0px;
+}
+.job-listing__rating--web {
+  margin: 2px 0px 0px;
+}
+.job-listing__star-icon--web {
+  width: 10px;
+  height: 10px;
+  margin: 6px 3px 0px;
+}
+.job-listing__title--web {
+  font-weight: bolder;
+  font-size: 16px;
+  text-align: start;
+  /* background-color: antiquewhite; */
+  padding: 0px 6px;
+  margin: 0px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  max-height: 40px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+}
+.job-listing__date-location-wrapper--web {
+  margin: 4px 0px -2px;
+  padding-left: 7px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 14px;
+  text-align: start;
+}
+
+.job-listing__date--web {
+  color: var(--primary);
+  font-weight: bold;
+  padding: 0px 5px 0px 0px;
+  margin: 0px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+}
+.job-listing__location-icon--web {
+  margin: 0px 5px;
+  height: 20px;
+  width: 10px;
+  color: grey;
+}
+.job-listing__location--web {
+  color: grey;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+}
+.job-listing__salary-estimate--web {
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0px 10px;
+}
+.job-listing__salary-wrapper--web {
+  padding: 0px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0px 7px;
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: start;
+}

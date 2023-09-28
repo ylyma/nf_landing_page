@@ -17,6 +17,10 @@ export const COMPANYNAMES = [
   "Macquarie Group",
   "CloudPay",
   "Cambridge University Press & Assessment",
+  "TikTok",
+  "Macquarie Group",
+  "CloudPay",
+  "Cambridge University Press & Assessment",
 ];
 export const TITLES = [
   "Deep Learning Engineer Intern, Tiktok e-Commerce - 2024",
@@ -35,8 +39,16 @@ export const TITLES = [
   "Java Engineering Lead",
   "Senior Developer",
   "Senior Software Engineer (Go Lang) - 3525",
+  "Deep Learning Engineer Intern, Tiktok e-Commerce - 2024",
+  "Java Engineering Lead",
+  "Senior Developer",
+  "Senior Software Engineer (Go Lang) - 3525",
 ];
 export const LOCATIONS = [
+  "Singapore",
+  "Singapore",
+  "Philippines",
+  "Philippines",
   "Singapore",
   "Singapore",
   "Philippines",
@@ -75,8 +87,16 @@ export const LOGOS = [
   logo2,
   logo1,
   logo2,
+  logo1,
+  logo2,
+  logo1,
+  logo2,
 ];
 export const TAGS = [
+  ["Graph", "TensorFlow", "PyTorch", "Spark", "C", "Python", "Jupyter"],
+  ["Graph", "TensorFlow"],
+  [],
+  ["Graph", "TensorFlow", "PyTorch", "Spark"],
   ["Graph", "TensorFlow", "PyTorch", "Spark", "C", "Python", "Jupyter"],
   ["Graph", "TensorFlow"],
   [],
@@ -111,9 +131,19 @@ export const DATESPOSTED = [
   "about 3 hours ago",
   "about 3 hours ago",
   "about 3 hours ago",
+  "about 2 hours ago",
+  "about 3 hours ago",
+  "about 3 hours ago",
+  "about 3 hours ago",
 ];
-export const RATINGS = [3.6, 5, 4, 3, 3.6, 5, 4, 3, 3.6, 5, 4, 3, 3.6, 5, 4, 3];
+export const RATINGS = [
+  3.6, 5, 4, 3, 3.6, 5, 4, 3, 3.6, 5, 4, 3, 3.6, 5, 4, 3, 3.6, 5, 4, 3,
+];
 export const TYPES = [
+  "Backend",
+  "Fullstack",
+  "QA",
+  "Backend",
   "Backend",
   "Fullstack",
   "QA",
@@ -136,6 +166,10 @@ export const TYPES = [
   "Backend",
 ];
 export const SALARIES = [
+  "S$7,450 - S$11,767",
+  undefined,
+  undefined,
+  "S$7,450 - S$11,767",
   "S$7,450 - S$11,767",
   undefined,
   undefined,

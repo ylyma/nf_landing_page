@@ -3,6 +3,9 @@ import "./JobCard.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { GrStar } from "react-icons/gr";
 import Tag from "../Tag";
+import { UseMatchMedia } from "../../hooks/UseMatchMedia";
+import JobListingDescriptionMobile from "./JobListingDescriptionMobile";
+import JobListingDescription from "./JobListingDescription";
 
 type Props = {
   title: string;
@@ -14,6 +17,7 @@ type Props = {
   tags?: string[];
   datePosted: string;
   rating?: number;
+  updateTitle: (title: string) => void;
 };
 
 const JobCard = ({
@@ -26,9 +30,11 @@ const JobCard = ({
   tags,
   datePosted,
   rating,
+  updateTitle,
 }: Props) => {
+  const isDesktopResolution = UseMatchMedia("(min-width:440px)", true);
   return (
-    <button className="job-listing__card">
+    <button className="job-listing__card" onClick={() => updateTitle(title)}>
       <div className="row">
         <div className="job-listing__logo-wrapper">
           <img
@@ -37,31 +43,25 @@ const JobCard = ({
             alt="company logo"
           ></img>
         </div>
-        <div className="job-listing__description-wrapper column">
-          <p className="job-listing__company-rating-wrapper row">
-            <span className="job-listing__company">{companyName}</span>
-            <span className="job-listing__rating">{rating}</span>
-            <GrStar className="job-listing__star-icon" />
-          </p>
-          <p className="job-listing__title">{title}</p>
-          <div className="job-listing__date-location-wrapper row">
-            <p className="job-listing__date">{datePosted}</p>
-            <FaLocationDot className="job-listing__location-icon" />
-            <p className="job-listing__location">{location}</p>
-          </div>
-          {salary === undefined ? (
-            <br />
-          ) : (
-            <div className="job-listing__salary-wrapper row">
-              <p>{salary} / mth</p>
-              <Tag
-                className="job-listing__salary-estimate"
-                colored={false}
-                title="EST"
-              ></Tag>
-            </div>
-          )}
-        </div>
+        {isDesktopResolution ? (
+          <JobListingDescription
+            title={title}
+            companyName={companyName}
+            location={location}
+            datePosted={datePosted}
+            salary={salary}
+            rating={rating}
+          />
+        ) : (
+          <JobListingDescriptionMobile
+            title={title}
+            companyName={companyName}
+            location={location}
+            datePosted={datePosted}
+            salary={salary}
+            rating={rating}
+          />
+        )}
         <div className="job-listing__type-wrapper">
           <Tag
             className="job-listing__type--font"
