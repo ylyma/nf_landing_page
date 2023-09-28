@@ -1,5 +1,19 @@
-.jobs-screen__main {
+.jobs-screen__job-list-description-wrapper {
   width: 100%;
   display: flex;
   align-items: flex-start;
+}
+.jobs-screen__main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+.jobs-screen__container {
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }

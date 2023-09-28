@@ -6,12 +6,12 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .main__container {
     max-width: 960px;
   }
-}
-@media (min-width: 768px) {
+} */
+/* @media (min-width: 768px) {
   .main__container {
     max-width: 720px;
   }
@@ -20,7 +20,7 @@
   .main__container {
     max-width: 540px;
   }
-}
+} */
 .main__screen {
   display: flex;
   flex-direction: column;

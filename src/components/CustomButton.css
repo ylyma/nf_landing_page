@@ -9,10 +9,10 @@
   border-style: solid;
   border-color: var(--primary);
   border-width: 2px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.2s, box-shadow 0s;
   font-weight: bold;
 }
 .button:hover {
   transform: translate(0, -8%);
-  box-shadow: 3px 3px 10px 5px #ebeae8;
+  box-shadow: 3px 3px 10px 0px #ebeae8;
 }

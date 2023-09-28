@@ -8,7 +8,7 @@ type Props = {
   fill: boolean;
 };
 
-const CustomButton: React.FC<Props> = ({ title, icon, fill }: Props) => {
+const CustomButton = ({ title, icon, fill }: Props) => {
   const getFill = () => {
     if (fill) {
       return PRIMARY;

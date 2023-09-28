@@ -22,7 +22,7 @@ const JobListView = () => {
   const ratings = RATINGS;
   const types = TYPES;
   const salaries = SALARIES;
-  const idxs = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+  const idxs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   return (
     <div className="job-listing__list-view column">
       {idxs.map((idx) => (

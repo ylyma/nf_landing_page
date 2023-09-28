@@ -1,8 +1,10 @@
 .job-listing__list-view > * {
-  margin: 5px;
+  margin: 0 0 5px;
+}
+.job-listing__list-view {
   width: 100%;
   flex-shrink: 0;
-  padding: 5px 10px;
+  padding: 5px;
 }
 @media screen and (min-width: 1010px) {
   .job-listing__list-view {

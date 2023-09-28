@@ -39,19 +39,19 @@ export const TITLES = [
 export const LOCATIONS = [
   "Singapore",
   "Singapore",
-  "Philipphines",
+  "Philippines",
   "Philippines",
   "Singapore",
   "Singapore",
-  "Philipphines",
+  "Philippines",
   "Philippines",
   "Singapore",
   "Singapore",
-  "Philipphines",
+  "Philippines",
   "Philippines",
   "Singapore",
   "Singapore",
-  "Philipphines",
+  "Philippines",
   "Philippines",
 ];
 export const LOGOS = [
