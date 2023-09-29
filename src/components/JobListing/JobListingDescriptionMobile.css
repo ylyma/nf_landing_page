@@ -1,4 +1,7 @@
 @import "../../assets/themes.css";
+.job-listing__container--mobile {
+  width: 100%;
+}
 .job-listing__description-wrapper--mobile {
   /* background-color: aqua; */
   height: fit-content;
@@ -6,6 +9,7 @@
   flex-shrink: 1;
   padding: 5px 5px;
   height: fit-content;
+  min-width: 250px;
 }
 .job-listing__company-rating-wrapper--mobile {
   display: block;
@@ -45,6 +49,7 @@
   line-height: 20px;
   max-height: 40px;
   font-family: "open-sans", Arial, Helvetica, sans-serif;
+  display: block;
 }
 .job-listing__date-location-wrapper--mobile {
   margin: 4px 0px -2px;
@@ -62,6 +67,7 @@
   padding: 0px 5px 0px 0px;
   margin: 0px;
   font-family: "open-sans", Arial, Helvetica, sans-serif;
+  display: block;
 }
 .job-listing__location-icon--mobile {
   margin: 0px 5px;
@@ -74,6 +80,7 @@
   margin: 0px;
   font-size: 14px;
   font-family: "open-sans", Arial, Helvetica, sans-serif;
+  display: block;
 }
 .job-listing__salary-estimate--mobile {
   font-family: "open-sans", Arial, Helvetica, sans-serif;
@@ -87,7 +94,44 @@
   align-items: center;
   margin: 0px 7px;
   font-family: "open-sans", Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   text-align: start;
+}
+.job-listing__logo-wrapper--mobile {
+  display: flex;
+  float: left;
+  width: auto;
+  height: 40px;
+  align-items: flex-start;
+  justify-content: start;
+  padding: 10px 5px;
+  margin-left: 5px;
+}
+.job-listing__logo-img--mobile {
+  max-width: 45px;
+  max-height: 45px;
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.job-listing__type-wrapper--mobile {
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 0px;
+  padding: 10px 10px 0 0;
+  height: fit-content;
+  white-space: nowrap;
+}
+.job-listing__type--font--mobile {
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.job-listing__logo-type-wrapper--mobile {
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px;
+  min-width: 250px;
 }

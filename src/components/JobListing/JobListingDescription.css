@@ -87,7 +87,40 @@
   align-items: center;
   margin: 0px 7px;
   font-family: "open-sans", Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   text-align: start;
+}
+.job-listing__logo-wrapper--web {
+  display: flex;
+  float: left;
+  width: auto;
+  height: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  /* background-color: bisque; */
+  padding: 10px 5px;
+  margin-left: 5px;
+}
+.job-listing__logo-img--web {
+  max-width: 45px;
+  max-height: 45px;
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.job-listing__type-wrapper--web {
+  float: right;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-right: 0px;
+  padding: 10px 10px 0 0;
+  height: fit-content;
+  white-space: nowrap;
+  /* background-color: crimson; */
+}
+.job-listing__type--font--web {
+  font-family: "open-sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }

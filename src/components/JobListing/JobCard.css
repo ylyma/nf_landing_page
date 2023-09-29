@@ -38,38 +38,6 @@
   display: flex;
   flex-direction: column;
 }
-.job-listing__logo-wrapper {
-  display: flex;
-  float: left;
-  width: auto;
-  height: 40px;
-  align-items: flex-start;
-  justify-content: center;
-  /* background-color: bisque; */
-  padding: 10px 5px;
-  margin-left: 5px;
-}
-.job-listing__type-wrapper {
-  float: right;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin-right: 0px;
-  padding: 5px;
-  height: fit-content;
-  white-space: nowrap;
-  /* background-color: crimson; */
-}
-.job-listing__type--font {
-  font-family: "open-sans", Arial, Helvetica, sans-serif;
-  font-weight: 600;
-}
-.job-listing__logo-img {
-  max-width: 45px;
-  max-height: 45px;
-  margin: 0px;
-  border-radius: 5px;
-}
 
 .job-listing__divider {
   border: 0;

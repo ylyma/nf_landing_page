@@ -35,41 +35,29 @@ const JobCard = ({
   const isDesktopResolution = UseMatchMedia("(min-width:440px)", true);
   return (
     <button className="job-listing__card" onClick={() => updateTitle(title)}>
-      <div className="row">
-        <div className="job-listing__logo-wrapper">
-          <img
-            className="job-listing__logo-img"
-            src={logo}
-            alt="company logo"
-          ></img>
-        </div>
-        {isDesktopResolution ? (
-          <JobListingDescription
-            title={title}
-            companyName={companyName}
-            location={location}
-            datePosted={datePosted}
-            salary={salary}
-            rating={rating}
-          />
-        ) : (
-          <JobListingDescriptionMobile
-            title={title}
-            companyName={companyName}
-            location={location}
-            datePosted={datePosted}
-            salary={salary}
-            rating={rating}
-          />
-        )}
-        <div className="job-listing__type-wrapper">
-          <Tag
-            className="job-listing__type--font"
-            colored={true}
-            title={type}
-          ></Tag>
-        </div>
-      </div>
+      {isDesktopResolution ? (
+        <JobListingDescription
+          title={title}
+          companyName={companyName}
+          location={location}
+          datePosted={datePosted}
+          salary={salary}
+          rating={rating}
+          logo={logo}
+          type={type}
+        />
+      ) : (
+        <JobListingDescriptionMobile
+          title={title}
+          companyName={companyName}
+          location={location}
+          datePosted={datePosted}
+          salary={salary}
+          rating={rating}
+          logo={logo}
+          type={type}
+        />
+      )}
       <hr className="job-listing__divider" />
       <div className="job-listing__tags">
         {tags === undefined ? (
