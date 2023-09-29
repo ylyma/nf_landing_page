@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./JobCard.css";
-import { FaLocationDot } from "react-icons/fa6";
-import { GrStar } from "react-icons/gr";
 import Tag from "../Tag";
 import { UseMatchMedia } from "../../hooks/UseMatchMedia";
 import JobListingDescriptionMobile from "./JobListingDescriptionMobile";

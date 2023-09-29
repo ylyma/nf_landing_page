@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode } from "react";
 import "./CustomButton.css";
 import { PRIMARY } from "../constants/colors";
 

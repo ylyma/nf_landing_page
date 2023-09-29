@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./JobsScreen.css";
 import JobListView from "../components/JobListing/JobListView";
 import JobDescriptionScrollView from "../components/JobDescription/JobDescriptionScrollView";
