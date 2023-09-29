@@ -21,11 +21,14 @@
   }
 }
 .job-listing__card:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   transform: translate(0, -1%);
 }
-.job-listing__card:focus {
+.focus {
   border: 1px solid var(--primary);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+.focus:hover {
   box-shadow: 0 0 0 2px var(--primary);
 }
 .row {

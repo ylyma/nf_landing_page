@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./JobCard.css";
 import { FaLocationDot } from "react-icons/fa6";
 import { GrStar } from "react-icons/gr";
@@ -8,6 +8,8 @@ import JobListingDescriptionMobile from "./JobListingDescriptionMobile";
 import JobListingDescription from "./JobListingDescription";
 
 type Props = {
+  focus: boolean;
+  idx: number;
   title: string;
   logo: any;
   companyName: string;
@@ -17,10 +19,12 @@ type Props = {
   tags?: string[];
   datePosted: string;
   rating?: number;
-  updateTitle: (title: string) => void;
+  updateFocus: (idx: number) => void;
 };
 
 const JobCard = ({
+  focus,
+  idx,
   title,
   logo,
   companyName,
@@ -30,11 +34,17 @@ const JobCard = ({
   tags,
   datePosted,
   rating,
-  updateTitle,
+  updateFocus,
 }: Props) => {
   const isDesktopResolution = UseMatchMedia("(min-width:440px)", true);
+
   return (
-    <button className="job-listing__card" onClick={() => updateTitle(title)}>
+    <button
+      className={`job-listing__card ${focus ? "focus" : ""}`}
+      onClick={() => {
+        updateFocus(idx);
+      }}
+    >
       {isDesktopResolution ? (
         <JobListingDescription
           title={title}
