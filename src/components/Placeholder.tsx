@@ -4,7 +4,7 @@ import "./Placeholder.css";
 const Placeholder = () => {
   return (
     <div className="placeholder">
-      <p>PLACEHOLDER SEARCH BAR</p>
+      <p>PLACEHOLDER</p>
     </div>
   );
 };

@@ -1,6 +1,4 @@
-@import "../../assets/themes.css";
 .job-listing__description-wrapper--web {
-  /* background-color: aqua; */
   height: fit-content;
   flex-grow: 1;
   flex-shrink: 1;
@@ -34,7 +32,7 @@
   font-weight: bolder;
   font-size: 16px;
   text-align: start;
-  /* background-color: antiquewhite; */
+
   padding: 0px 6px;
   margin: 0px;
   display: -webkit-box;
@@ -98,7 +96,7 @@
   height: 40px;
   align-items: flex-start;
   justify-content: center;
-  /* background-color: bisque; */
+
   padding: 10px 5px;
   margin-left: 5px;
 }
@@ -118,7 +116,6 @@
   padding: 10px 10px 0 0;
   height: fit-content;
   white-space: nowrap;
-  /* background-color: crimson; */
 }
 .job-listing__type--font--web {
   font-family: "open-sans", Arial, Helvetica, sans-serif;
